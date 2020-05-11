@@ -59,7 +59,6 @@ phases:
     commands:
       # Upload test coverage report to CodeCov and CodeClimate.
       - curl -s https://codecov.io/bash | bash -s - -t ${CODECOV_TOKEN} -f ${CODECOV_COVERAGE_REPORT_PATH}
-      - ./cc-test-reporter after-build -t lcov -r ${CODE_CLIMATE_REPORTER_ID} --exit-code $?
 
       # Clear S3 bucket.
       - aws s3 rm s3://${S3_BUCKET} --recursive
