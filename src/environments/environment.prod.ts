@@ -2,6 +2,6 @@ export const environment = {
   production: true,
 
   apiUrls: {
-    quote: 'http://quote-publi-jv87ocwvh0p8-1628581181.us-east-1.elb.amazonaws.com/api',
+    quote: 'http://quote-publi-17n6i470g2egt-1757080673.us-east-2.elb.amazonaws.com/api',
   },
 };
