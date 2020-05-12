@@ -22,6 +22,8 @@ import { QuoteService } from '../../services';
 export class QuoteContainerComponent implements OnInit, OnDestroy {
   private destroy$ = new Subject<void>();
 
+  // TODO: do smth
+
   private isRefreshBtnClicked$$ = new BehaviorSubject<boolean>(false);
   isRefreshBtnClicked$ = this.isRefreshBtnClicked$$.asObservable().pipe(share());
 
